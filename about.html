@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* *{
+            box-sizing: border-box;
+            padding: 0 0 0 0;
+        } */
+        /* Define a custom class for orange background */
+        .bg-orange {
+            background-color: orange !important;
+        }
+
+        header{
+            position:  fixed;
+            width: 100%;
+            top: 0;
+        }
+       .logo{
+        padding: 0 20px;
+        margin-top: 10px;
+       }
+       .toggle_btn{
+        padding: 20px;
+        margin-right: 40px;
+        margin-top: 20px;
+       }
+
+
+        /* Custom CSS for the responsive section */
+        .custom-section {
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 70px;
+            /* Adjusted to account for the fixed navbar */
+            transition: background-color 0.3s ease;
+            /* Smooth transition on hover */
+        }
+
+        .custom-section:hover {
+            background-color: pink;
+            /* Change background color to pink on hover */
+        }
+
+        @media (max-width: 576px) {
+            /* Adjust styles for small screens */
+            .custom-section {
+                margin-top: 0;
+                /* Reset margin for small screens */
+            }
+        }
+
+        /* Custom styles for circular card */
+        .circle-card {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .circle-card img {
+            width: 100%;
+            height: 138%;
+            object-fit: cover;
+        }
+
+        /* Custom styles for the footer */
+        footer {
+            background-color: #343a40;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 10 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        body {
+            background-color: aqua;
+        }
+
+          
+        /* Additional styles for the 3D sections */
+        .custom-3d-content {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .custom-3d-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.5s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 0 calc(50% - 20px);
+        }
+
+        .custom-3d-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Additional styles for text */
+        .custom-3d-card h6 {
+            color: #ff6600;
+            margin-bottom: 5px;
+        }
+
+        .custom-3d-card p {
+            margin-bottom: 10px;
+        }
+
+        /* Additional styles for smaller screens */
+        @media (max-width: 576px) {
+            .custom-3d-content {
+                flex-direction: column;
+            }
+
+            .custom-3d-card {
+                flex: 1 0 100%;
+                margin-bottom: 20px;
+            }
+        }
+        #bride-map {
+            width: 100%;
+            height: 300px; /* You can adjust the height as needed */
+            margin-top: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+    </style>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <title>www.nirajwebsite.com</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code -->
+    <!-- WeedingPic -->
+    <header>
+        <nav class="navbar navbar-dark bg-orange fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo " href="index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVB_WhfmeTy6ZxxKVijroHj9qrnLAO9oBQuO8b_AdGLvM9ZdcYZ01kYS4ni_YoOT2o7CA&usqp=CAU"
+                        alt="Bootstrap" width="30">
+                       WeddingDetails 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon toggle_btn"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                            Wedding
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contactUs.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+       <br><br><br> <h1>Bride Details</h1>
+        <!-- Existing HTML code -->
+    
+        <!-- New 3D Section   -->
+        <div class="custom-3d-section">
+            <div class="custom-3d-content">
+                <div class="custom-3d-card">
+                    <h6>!!श्री गणेशाय नमः!!</h6>
+                    <p>💐💐💐💐</p>
+                    <p>शुभ तिलकोत्सव</p>
+                    <p>दिनांक - 02.03.2024 (शनिवार)</p>
+                    <!-- Add more content as needed -->
+                </div>
+                <div class="custom-3d-card">
+                    <h6>!!श्री गणेशाय नमः!!</h6>
+                    <p>💐💐💐💐</p>
+                    <p>गण्डपाच्छादन एवं हल्दी कलश</p>
+                    <p>दिनांक - 04.03.2024 (सोमवार)</p>
+                    <!-- Add more content as needed -->
+                </div>
+                <div class="custom-3d-card">
+                    <h6>!!श्री गणेशाय नमः!!</h6>
+                    <p>💐💐💐💐</p>
+                    <p>बारात आगमन, प्रीतिभोज (संध्या 07 बजे)</p>
+                    <p>एवं रात्रि में शुभ विवाह</p>
+                    <p>दिनांक - 06.03.2024 (बुधवार)</p>
+                    <!-- Add more content as needed -->
+                </div>
+                <div class="custom-3d-card">
+                    <h6>!!श्री गणेशाय नमः!!</h6>
+                    <p>💐💐💐💐</p>
+                    <p>हल्दी है चंदन है दो रिश्तों का बंधन है</p>
+                    <p>हमारे यहाँ इस शुभ घड़ी की बेला में आपका अभिनंदन है।</p>
+                    <!-- Add more content as needed -->
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Map Section for Bride -->
+        <div id="bride-map">
+            <!-- Replace this iframe with your provided map iframe -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d422.8177119748349!2d84.76659061860734!3d26.88383683391809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sin!4v1706861462304!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+       <br><br> <h1> Groom Details</h1>
+        <p>Details not hear</p>
+    <!-- Footer Section -->
+    <br><br><br><br><br><br><footer>
+        <p>&copy; 2024 www.nirajwebsite.com. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Set dynamic height for card based on content
+        var card = document.getElementById('dynamicCard');
+        card.style.height = Math.max(card.querySelector('.card-front').offsetHeight, card.querySelector('.card-back').offsetHeight) + "px";
+    </script>
+</body>
+
+</html>

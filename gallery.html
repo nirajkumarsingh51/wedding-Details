@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        /* Define a custom class for orange background */
+        .bg-orange {
+            background-color: orange !important;
+        }
+
+        header{
+            position:  fixed;
+            width: 100%;
+            top: 0;
+        }
+       .logo{
+        padding: 0 20px;
+        margin-top: 10px;
+       }
+       .toggle_btn{
+        padding: 20px;
+        margin-right: 40px;
+        margin-top: 20px;
+       }
+
+        /* Custom CSS for the responsive section */
+        .custom-section {
+            padding: 20px;
+            background-color: #f8f9fa;
+            margin-top: 70px;
+            /* Adjusted to account for the fixed navbar */
+            transition: background-color 0.3s ease;
+            /* Smooth transition on hover */
+        }
+
+        .custom-section:hover {
+            background-color: pink;
+            /* Change background color to pink on hover */
+        }
+
+        @media (max-width: 576px) {
+
+            /* Adjust styles for small screens */
+            .custom-section {
+                margin-top: 0;
+                /* Reset margin for small screens */
+            }
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 10 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+
+        }
+
+        body {
+            background-color: aqua;
+        }
+    </style>
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <title>www.nirajwebsite.com</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body class="p-3 m-0 border-0 bd-example m-0 border-0">
+    <!-- Example Code -->
+
+    <header>
+        <nav class="navbar navbar-dark bg-orange fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVB_WhfmeTy6ZxxKVijroHj9qrnLAO9oBQuO8b_AdGLvM9ZdcYZ01kYS4ni_YoOT2o7CA&usqp=CAU"
+                        alt="Bootstrap" width="30">
+                       <h2>WeddingDetails</h2> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon toggle_btn"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+                            Wedding
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="contactUs.html">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+<br><br><br>
+    <h1>Gallery</h1>
+
+    <!-- Section -->
+    <div class="custom-section">
+        <h1>02-03-2024</h1>
+        <h2>तिलक का रस्म |</h2>
+        <p>2-हो रहा दो दिलों का मिलन <br>
+
+            जैसे दो नदियों का संगम, <br>
+
+            तुम दोनों सदा रहो साथ-साथ <br>
+
+            रब से बस यही है फरियाद आपको शादी की ढेर सारी शुभकामनाएं।</p>
+        <button type="button" class="btn btn-dark"><a
+                href="https://drive.google.com/drive/folders/1Hob7e0iXwLOOTw6rawl2FwWcn0TV2p5G?usp=sharing"
+                target="-_blank">Go To Drive</a></button>
+    </div>
+
+    <!-- Section -->
+    <div class="custom-section">
+        <h1>06-03-2024</h1>
+        <h2> शुभ विवाह |</h2>
+        <p>विश्वास का यह बंधन यूं ही बना रहे, आपके जीवन में प्रेम का सागर यूं ही बहता रहे, दुआ है रब से
+            सुख और समृद्धि से जीवन भरा रहे,
+            शहनाइयों से गूंजी है आज की यह रात रिश्ते में बंधने जा रहा है मेरा यार,''
+            जीवन की एक नई पारी प्रारंभ हो रही।</p>
+            <button type="button" class="btn btn-dark"><a
+                href="https://drive.google.com/drive/folders/11o-1zGVX9p9Cj8x_KWFoNLj4DJl3PDfW?usp=sharing"
+                target="-_blank">Go To Drive</a></button>
+    </div>
+
+    <!-- Section -->
+    <div class="custom-section">
+        <h1>08-03-2024</h1>
+        <h2> बहुभोज या प्रीतिभोज |</h2>
+        <p> शादी से पहले जिम्मेदारियां बोझ लगती हैं और शादी के बाद इन्हें निभाना अच्छा लगता है। <br>
+            अपने जीवन साथी में जो खूबियां चाहते हैं, खुद को वैसा बना लीजिए। आपका जीवन सुखमय हो जाएगा।</p>
+            <button type="button" class="btn btn-dark"><a
+                href="https://drive.google.com/drive/folders/1KdLjqVLTzsKQTWZBEtUNRIt-FPno-KXl?usp=sharing"
+                target="-_blank">Go To Drive</a></button>
+
+    </div>
+    <br>
+    <br><br><br>
+
+
+    <footer>
+        <p>&copy; 2024 www.nirajwebsite.com. All Rights Reserved.</p>
+    </footer>
+
+</body>
+
+</html>
