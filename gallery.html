@@ -11,20 +11,22 @@
             background-color: orange !important;
         }
 
-        header{
-            position:  fixed;
+        header {
+            position: fixed;
             width: 100%;
             top: 0;
         }
-       .logo{
-        padding: 0 20px;
-        margin-top: 10px;
-       }
-       .toggle_btn{
-        padding: 20px;
-        margin-right: 40px;
-        margin-top: 20px;
-       }
+
+        .logo {
+            padding: 0 20px;
+            margin-top: 10px;
+        }
+
+        .toggle_btn {
+            padding: 20px;
+            margin-right: 40px;
+            margin-top: 20px;
+        }
 
         /* Custom CSS for the responsive section */
         .custom-section {
@@ -64,10 +66,94 @@
         body {
             background-color: aqua;
         }
+
+        /* Custom styles for the gallery */
+        /* .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            margin: 10px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        } */
+
+        /* Custom styles for the gallery */
+        .gallery-container {
+            display: flex;
+            overflow-x: auto;
+            overflow-y: hidden;
+            /* Hide vertical scrollbar */
+            white-space: nowrap;
+            /* animation: scrollLeft 20s linear infinite; */
+            padding-bottom: 20px;
+            /* Add some padding to avoid overlapping with the navigation bar */
+        }
+
+        @keyframes scrollLeft {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-100% + 100vw));
+                /* Adjust the percentage to ensure smooth scrolling */
+            }
+        }
+
+
+        .gallery-item {
+            flex: 0 0 auto;
+            /* Let items shrink or grow as needed */
+            margin: 10px;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            /* Ensure images don't exceed their container */
+            /* height: auto; */
+            width: 350px;
+            /* Set your desired fixed width */
+            height: 350px;
+            /* Set your desired fixed height */
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
     </style>
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
     <title>www.nirajwebsite.com</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add this script before the closing </body> tag -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const galleryItems = document.querySelectorAll('.gallery-item img');
+
+            galleryItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // You can use a lightbox library or create your own logic to display the image
+                    alert(`You clicked on ${item.alt}`);
+                });
+            });
+        });
+    </script>
+
 </head>
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
@@ -79,7 +165,7 @@
                 <a class="navbar-brand logo" href="index.html">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVB_WhfmeTy6ZxxKVijroHj9qrnLAO9oBQuO8b_AdGLvM9ZdcYZ01kYS4ni_YoOT2o7CA&usqp=CAU"
                         alt="Bootstrap" width="30">
-                       WeddingDetails
+                    WeddingDetails
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
@@ -118,9 +204,64 @@
 
 
 
-<br><br><br>
+    <br><br><br>
     <h1>Gallery</h1>
+    <br>
+    <!-- Existing code... -->
 
+    <!-- <div class="custom-section"> -->
+    <h2>Image </h2>
+    <div class="gallery-container">
+        <!-- Gallery items start -->
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312152318%20-%20Copy.jpg"
+                alt="Image 1">
+        </div>
+        <div class="gallery-item">
+
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182348.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182420.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182504.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182550.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182641.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182710.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182724.jpg" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312182907.jpg" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312183027.jpg" alt="Image 10">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/wedding-Details/main/img/IMG20230312183140.jpg" alt="Image 11">
+        </div>
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/Google-Developers-Project/main/WhatsApp%20Image%202024-01-31%20at%2009.28.47.jpeg" alt="Image 12">
+        </div> 
+        <div class="gallery-item">
+            <img src="https://raw.githubusercontent.com/nirajkumarsingh51/Google-Developers-Project/main/WhatsApp%20Image%202024-01-31%20at%2009.59.10.jpeg" alt="Image 13">
+        </div> 
+
+        <!-- Add more gallery items for each image -->
+        <!-- Gallery items end -->
+         <!-- </div>  -->
+    </div> <br>
+     <!-- Remaining content outside the custom-section  -->
+
+    <h2>WeddingPic</h2>
     <!-- Section -->
     <div class="custom-section">
         <h1>02-03-2024</h1>
@@ -145,7 +286,7 @@
             सुख और समृद्धि से जीवन भरा रहे,
             शहनाइयों से गूंजी है आज की यह रात रिश्ते में बंधने जा रहा है मेरा यार,''
             जीवन की एक नई पारी प्रारंभ हो रही।</p>
-            <button type="button" class="btn btn-dark"><a
+        <button type="button" class="btn btn-dark"><a
                 href="https://drive.google.com/drive/folders/11o-1zGVX9p9Cj8x_KWFoNLj4DJl3PDfW?usp=sharing"
                 target="-_blank">Go To Drive</a></button>
     </div>
@@ -156,7 +297,7 @@
         <h2> बहुभोज या प्रीतिभोज |</h2>
         <p> शादी से पहले जिम्मेदारियां बोझ लगती हैं और शादी के बाद इन्हें निभाना अच्छा लगता है। <br>
             अपने जीवन साथी में जो खूबियां चाहते हैं, खुद को वैसा बना लीजिए। आपका जीवन सुखमय हो जाएगा।</p>
-            <button type="button" class="btn btn-dark"><a
+        <button type="button" class="btn btn-dark"><a
                 href="https://drive.google.com/drive/folders/1KdLjqVLTzsKQTWZBEtUNRIt-FPno-KXl?usp=sharing"
                 target="-_blank">Go To Drive</a></button>
 
